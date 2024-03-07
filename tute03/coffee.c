@@ -48,12 +48,12 @@ int main(void) {
 
     printf("Enter size (L for Large, R for Regular): ");
     // TODO: take user input
-    scanf("%c", &order.size);
+    scanf(" %c", &order.size);
 
     // TODO: Calculate cost of order
-    int sum = BASE_COST + order.sugar * ADDED_COST;
+    int sum = BASE_COST + (order.sugar * ADDED_COST);
 
-    if (order.size == 'L') {
+    if (order.size == LARGE) {
         sum += ADDED_COST;
     }
 

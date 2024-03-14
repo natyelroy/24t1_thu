@@ -88,7 +88,7 @@ void place_player(struct celestial_body galaxy[SIZE][SIZE]) {
     int row;
     int col;
     scanf("%d %d", &row, &col);
-    while (row != 0 || col != 0 || row != SIZE - 1 || col != SIZE - 1) {
+    while (row != 0 && col != 0 && row != SIZE - 1 && col != SIZE - 1) {
         printf("Invalid starting position!\n");
         printf("Please scan again: ");
         scanf("%d %d", &row, &col);

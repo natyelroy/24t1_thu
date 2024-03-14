@@ -66,9 +66,8 @@ int main(void) {
         if (command == ADD_PLANETS) {
             galaxy[row][col].entity = PLANET;
         } else if (command == ADD_NEBULA) {
-            scanf("%d", &points);
             galaxy[row][col].entity = NEBULA;
-            galaxy[row][col].points = points;
+            galaxy[row][col].points = NEBULA_POINTS;
         }
         num++;
     }

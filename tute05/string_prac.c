@@ -46,10 +46,10 @@ char to_uppercase(char c) {
 int is_vowel(char c) {
     char lower_c = to_lowercase(c);
 
-    return lower_c == 'a' 
+    return lower_c == 'a'
         || lower_c == 'e'
-        || lower_c == 'i' 
-        || lower_c == 'o' 
+        || lower_c == 'i'
+        || lower_c == 'o'
         || lower_c == 'u';
 }
 
@@ -58,7 +58,14 @@ int is_vowel(char c) {
 // 1.
 // returns the number of lowercase letters in `char *string`
 int count_lowercase(char string[MAX_CHARS]) {
-    return 42;
+    int count = 0;
+    for (int i = 0; string[i] != '/0'; i++) {
+        if (is_lowercase(string[i])) {
+            count++;
+        }
+    }
+
+    return count;
 }
 
 // 2.
@@ -71,7 +78,7 @@ void make_vowels_uppercase(char string[MAX_CHARS]) {
 // shortens a string so that it ends after the first word
 // e.g. "This is a sentence" should turn into:
 //      "This"
-// 
+//
 // (hint. what defines when a string ends?)
 void delete_following_words(char string[MAX_CHARS]) {
     return;

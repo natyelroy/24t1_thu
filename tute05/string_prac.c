@@ -59,7 +59,7 @@ int is_vowel(char c) {
 // returns the number of lowercase letters in `char *string`
 int count_lowercase(char string[MAX_CHARS]) {
     int count = 0;
-    for (int i = 0; string[i] != '/0'; i++) {
+    for (int i = 0; string[i] != '\0'; i++) {
         if (is_lowercase(string[i])) {
             count++;
         }

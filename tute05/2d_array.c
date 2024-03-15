@@ -49,6 +49,8 @@ int main(void) {
     char command;
     int points;
     int num = 0;
+    int row;
+    int col;
     while (num < count) {
         scanf(" %c %d %d", &command, &row, &col);
         if (command == ADD_PLANETS) {
